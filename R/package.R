@@ -14,8 +14,15 @@ NULL
       if (interactive())
         warning("torchvisionlib is not installed. Run `intall_torchvisionlib()` before using the package.")
     } else {
-      dyn.load(lib_path("torchvision"), local = FALSE)
-      dyn.load(lib_path("torchvisionlib"), local = FALSE)
+      if (grepl("mingw", R.version[["os"]])) {
+        libpath <- lib_path("torchvisionlib")
+        withr::with_dir(dirname(libpath), {
+          dyn.load(basename(libpath), local = FALSE)
+        })
+      } else {
+        dyn.load(lib_path("torchvision"), local = FALSE)
+        dyn.load(lib_path("torchvisionlib"), local = FALSE)
+      }
 
       # when using devtools::load_all() the library might be available in
       # `lib/pkg/src`
@@ -79,6 +86,15 @@ install_torchvisionlib <- function(url = Sys.getenv("TORCHVISIONLIB_URL", unset 
     version <- packageDescription("torchvisionlib")$Version
     os <- get_cmake_style_os()
     dev <- if (torch::cuda_is_available()) "cu" else "cpu"
+
+    if (grepl("darwin", R.version$os)) {
+      if (grepl("aarch64", R.version$arch)) {
+        dev <- paste0(dev, "+arch64")
+      } else {
+        dev <- paste0(dev, "+x86_64")
+      }
+    }
+
     if (dev == "cu") {
       runtime_version <- torch::cuda_runtime_version()
       dev <- paste0(dev, runtime_version[1,1], runtime_version[1,2])
