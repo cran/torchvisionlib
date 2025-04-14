@@ -1,13 +1,13 @@
-361b2143fc500584def5bd2f7296f533 *DESCRIPTION
+b122e3d74d81226399de363061efd505 *DESCRIPTION
 fc09e107533cfabd1d6d7f39a27be0c1 *LICENSE
 cb30c64283743df812fffe5bce0855c5 *NAMESPACE
-f9501c805e782ace81c7a71265140c99 *NEWS.md
+d9309cbea6d19c20038e392e619bbca8 *NEWS.md
 66631a746f66e8b1cc96bad8678bcd2f *R/RcppExports.R
 731479ba36e5d84ca3689c9b7fdae6cf *R/ops.R
 71d83be3c6d136d8355b75f5fb6a6072 *R/package.R
 9b84d4ea6d5887836da4247b73e36c99 *R/reader.R
 6e241fed3042e65bfd21704c12ee7cc7 *R/utils.R
-d34719901920334bda6d0f6c16c8f3ba *README.md
+b37e7f5caa0195a7877a4e985f2f3ff6 *README.md
 0483225850df55c7190bc22b33348dfb *inst/def/torchvisionlib.def
 5a71f214cfb16fcae2aa4f7eb37b1558 *inst/include/torchvisionlib/exports.h
 36ad4a41a67c9fb7cf58360a72c5bef8 *inst/include/torchvisionlib/torchvisionlib.h
