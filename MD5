@@ -1,7 +1,7 @@
-b122e3d74d81226399de363061efd505 *DESCRIPTION
+3394c902893824240a883a2d3939c38f *DESCRIPTION
 fc09e107533cfabd1d6d7f39a27be0c1 *LICENSE
 cb30c64283743df812fffe5bce0855c5 *NAMESPACE
-d9309cbea6d19c20038e392e619bbca8 *NEWS.md
+9e7c62eacc938c21c87e5b0da21cb5c7 *NEWS.md
 66631a746f66e8b1cc96bad8678bcd2f *R/RcppExports.R
 731479ba36e5d84ca3689c9b7fdae6cf *R/ops.R
 71d83be3c6d136d8355b75f5fb6a6072 *R/package.R
@@ -11,7 +11,6 @@ b37e7f5caa0195a7877a4e985f2f3ff6 *README.md
 0483225850df55c7190bc22b33348dfb *inst/def/torchvisionlib.def
 5a71f214cfb16fcae2aa4f7eb37b1558 *inst/include/torchvisionlib/exports.h
 36ad4a41a67c9fb7cf58360a72c5bef8 *inst/include/torchvisionlib/torchvisionlib.h
-806d46a0580b74139e987a8c3d515ef5 *inst/include/torchvisionlib/torchvisionlib_types.h
 70731af7ba83d97868f3cc430b13ec62 *man/install_torchvisionlib.Rd
 6b3b2e037cd8e5a7371dd6fb95b01a0e *man/ops_deform_conv2d.Rd
 54acb7a7c4caef26859c7bd376fb2850 *man/ops_nms.Rd
